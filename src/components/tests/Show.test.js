@@ -3,9 +3,33 @@ import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Show from './../Show';
 
-test('renders without errors', () => { });
+const testShow = {
 
-test('renders Loading component when prop show is null', () => { });
+    name: "test show",
+    summary: "test summary",
+    seasons: [
+        {
+            id: 0,
+            name: "season 1",
+            episodes: []
+        },
+        {
+            id: 1,
+            name: "season 2",
+            episodes: []
+        }
+    ]
+}
+
+
+test('renders without errors', () => {
+   //render(<Show show={testShow}/>)
+});
+
+test('renders Loading component when prop show is null', () => {
+    //render(<Show show={null}/>);
+
+});
 
 test('renders same number of options seasons are passed in', () => { });
 
